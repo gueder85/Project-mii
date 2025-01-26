@@ -6,17 +6,37 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+.m-index {
+  padding-inline: 64px;
+  padding-block: 100px 0;
+  @media (max-width: 768px) {
+    padding-block: 50px 0;
+    padding-inline: 16px;
+  }
+}
 
 /* 自訂 */
-
 
 /* section1 */
 .m-section1 {
   width: 100%;
 }
-.m-index {
-  padding-inline: 64px;
-  padding-block: 100px 0;
+.m-section1-card1 {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.m-section1-mobile {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+    height: 650px;
+    overflow: hidden;
+    img {
+      height: 100%;
+    }
+  }
 }
 .m-section1-card1-text {
   margin-right: 10%;
@@ -48,33 +68,35 @@
     font-size: 18px;
   }
 }
+.m-section2-col {
+  background-size: cover;
+  padding: 50px 40px 50px 40px;
+  @media (max-width: 768px) {
+    padding-block: 16px;
+    padding-inline: 16px;
+  }
+}
 .m-section2-col1 {
   background-image: url(../img/col1.png);
-  padding: 50px 40px 50px 40px;
 }
 .m-section2-col2 {
   background-image: url(../img/col2.png);
-  padding: 50px 40px 50px 40px;
 }
 .m-section2-col3 {
   background-image: url(../img/col3.png);
-  padding: 50px 40px 50px 40px;
 }
 .m-section2-col4 {
   background-image: url(../img/col4.png);
-  padding: 50px 40px 50px 40px;
 }
 .m-section2-line {
   border-left: 5px solid white;
   padding-left: 25px;
   color: white;
-  /* h4 {
-    margin: 0;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    font-size: 28px;
-    font-weight: 700;
-  } */
+  @media (max-width: 768px) {
+    border-left: none;
+    padding-left: 0;
+    color: none;
+  }
   p {
     margin: 0;
     font-size: 16px;
