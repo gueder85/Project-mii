@@ -2,6 +2,17 @@
 .container-fluid {
   padding: 0;
 }
+.card.card1 {
+  padding-inline: 16px;
+  border-radius: 0;
+  border: 1px solid #cacaca;
+  img {
+    border-radius: 0;
+  }
+  @media (max-width:768px) {
+    padding: 16px;
+  }
+}
 .card {
   border-radius: 0;
   border: none;

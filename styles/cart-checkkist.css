@@ -36,7 +36,6 @@
   margin: 0;
 }
 .m-sec2-card {
-  /* max-width: 3260px; */
   @media (max-width: 768px) {
     margin-bottom: 32px;
   }

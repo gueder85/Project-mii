@@ -53,7 +53,17 @@
             >
               <a href=""><img src="./images/heart.svg" alt="" /></a>
               <a href=""><img src="./images/account.svg" alt="" /></a>
-              <a href=""><img src="./images/cart.svg" alt="" /></a>
+              <!-- 購物車按鈕設定 -->
+              <a
+                class="btn p-0"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+              >
+                <img src="./images/cart.svg" alt="" />
+              </a>
+              <!-- ^^^^^^^^^^^  -->
               <a href="" class="hamburger"
                 ><img src="./images/hamburger.svg" alt=""
               /></a>
@@ -318,6 +328,119 @@
           </button>
         </div>
       </footer> -->
+    </div>
+
+    <!-- sidebar -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <div class="d-flex align-items-end">
+          <div class="h2 pe-5">購物車清單</div>
+          <h3>2件商品</h3>
+        </div>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="row row-cols-1">
+          <div class="col">
+            <div class="card card1 mb-3">
+              <div class="row g-0">
+                <div class="col-md-3 m-sec2-card">
+                  <img src="./img/card2-img.png" class="img-fluid" alt="" />
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body p-lg-3 px-0">
+                    <div class="d-flex flex-column justify-content-between">
+                      <div>
+                        <h3 class="h3 p-lg-x-1 p-lg-1">
+                          Limited Edition Paranormal Troublemaker Telecaster®
+                          Deluxe
+                        </h3>
+                        <h4 class="p-lg-1">顏色 : white</h4>
+                        <div class="d-flex align-items-end p-lg-1 pb-lg-2 py-1">
+                          <h4>數量 :</h4>
+                          <div
+                            class="btn-group btn-group-sm"
+                            role="group"
+                            aria-label="Basic outlined example"
+                          >
+                            <button type="button" class="btn">
+                              <i class="fa-solid fa-minus fa-fw"></i>
+                            </button>
+                            <button type="button" class="btn">1</button>
+                            <button type="button" class="btn">
+                              <i class="fa-solid fa-plus fa-fw"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <h4 class="h3 p-lg-1">價錢 : NT$ 13,999</h4>
+                        <div class="d-flex justify-content-end">
+                          <h5 class="btn p-1">移除商品</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card1 mb-3">
+              <div class="row g-0">
+                <div class="col-md-3 m-sec2-card">
+                  <img src="./img/card3.png" class="img-fluid" alt="" />
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body p-lg-3 px-0">
+                    <div class="d-flex flex-column justify-content-between">
+                      <div>
+                        <h3 class="h3 p-lg-x-1 p-lg-1">
+                          衛武營國際音樂節-全票
+                        </h3>
+                        <div class="d-flex align-items-end p-lg-1 pb-lg-2 py-1">
+                          <h4>數量 :</h4>
+                          <div
+                            class="btn-group btn-group-sm"
+                            role="group"
+                            aria-label="Basic outlined example"
+                          >
+                            <button type="button" class="btn">
+                              <i class="fa-solid fa-minus fa-fw"></i>
+                            </button>
+                            <button type="button" class="btn">1</button>
+                            <button type="button" class="btn">
+                              <i class="fa-solid fa-plus fa-fw"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <h4 class="h3 p-lg-1">價錢 : NT$ 13,999</h4>
+                        <div class="d-flex justify-content-end">
+                          <h5 class="btn p-1">移除商品</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="py-3" />
+        <div class="d-flex justify-content-between py-2">
+          <h4 class="h4">總計 :</h4>
+          <h4 class="h4">NT$ 27,998</h4>
+        </div>
+        <button type="button" class="btn btn-dark w-100 mt-3">前往結帳</button>
+      </div>
     </div>
     <!-- Bootstrap JavaScript Libraries -->
     <script
